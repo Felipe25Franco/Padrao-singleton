@@ -6,8 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Padrao-singleton" />
+        <module name="padrao-singleton" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Padrao-singleton" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
