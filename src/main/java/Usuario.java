@@ -1,16 +1,11 @@
 public class Usuario {
 
     private static final Usuario instance = new Usuario();
-
-
     private Usuario() {}
-
-
     public static Usuario getInstance() {
         return instance;
     }
 
-    // Atributos da sessão
     private String nomeCliente;
     private String numeroConta;
     private boolean autenticado;

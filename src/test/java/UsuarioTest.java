@@ -21,13 +21,9 @@ public class UsuarioTest {
         assertTrue(Usuario.getInstance().isAutenticado());
     }
 
-    @Test
-    public void deveManterMesmoEstadoNaMesmaInstancia() {
-        Usuario sessao1 = Usuario.getInstance();
-        Usuario sessao2 = Usuario.getInstance();
-
-        sessao1.setNomeCliente("Maria");
-        assertEquals("Maria", sessao2.getNomeCliente());
-        assertSame(sessao1, sessao2);
-    }
+   @Test
+    public void deveRetornarStatusAutenticacaoFalso() {
+        Usuario.getInstance().setAutenticado(false);
+        assertFalse(Usuario.getInstance().isAutenticado());
+   }
 }
